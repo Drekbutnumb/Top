@@ -789,6 +789,83 @@
             .control-btn { width: 40px; height: 40px; }
             .theme-toggle { top: 60px; right: 10px; }
             .top-status-bar { gap: 10px; font-size: 8px; }
+            
+            /* Page Nav Mobile */
+            .page-nav {
+                top: 15px;
+                left: 15px;
+                gap: 8px;
+            }
+            .page-nav-link {
+                font-size: 9px;
+                padding: 8px 12px;
+            }
+            
+            /* Hero Section Mobile */
+            .hero {
+                padding: 100px 20px 40px 20px;
+                min-height: auto;
+            }
+            .logo {
+                font-size: clamp(36px, 10vw, 60px) !important;
+            }
+            .tagline {
+                font-size: 10px !important;
+                letter-spacing: 0.15em;
+                margin-top: 20px;
+            }
+            .scroll-indicator {
+                display: none;
+            }
+            .status-bar {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 30px;
+            }
+            .status-item {
+                font-size: 9px;
+            }
+            
+            /* Boot screen mobile */
+            .boot-logo {
+                font-size: 36px !important;
+            }
+            .boot-terminal {
+                width: 95% !important;
+                max-width: 350px;
+                padding: 15px !important;
+            }
+            .boot-terminal-header {
+                font-size: 10px;
+            }
+            .boot-line {
+                font-size: 11px !important;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            .boot-line .prefix {
+                min-width: 50px;
+            }
+            .boot-line .cmd {
+                flex: 1;
+                min-width: 150px;
+            }
+            .boot-progress-text {
+                font-size: 10px;
+            }
+            
+            /* Mute button mobile */
+            .mute-btn-container {
+                bottom: 15px;
+                left: 15px;
+            }
+            .mute-btn {
+                width: 40px;
+                height: 40px;
+            }
+            .mute-btn-label {
+                display: none;
+            }
         }
 
         * {
@@ -1443,6 +1520,18 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .status-bar {
+                position: relative;
+                top: auto;
+                right: auto;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 20px;
+            }
         }
 
         .status-item {
